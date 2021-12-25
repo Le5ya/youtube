@@ -2,8 +2,10 @@
 
 Проект выполнила Л.Толстых
 
-##Используемые технологии
--HTML
--CSS
--Normalize.css
--SVG-sprit
+<h2>Используемые технологии</h2>
+<ul>
+<li>-HTML</li>
+<li>-CSS</li>
+<li>-Normalize.css</li>
+<li>-SVG-sprit</li>
+</ul>
