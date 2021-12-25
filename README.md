@@ -9,3 +9,5 @@
 <li>-Normalize.css</li>
 <li>-SVG-sprit</li>
 </ul>
+
+<a href="#"><h2>Посмотреть, как выглядит</h2></a>
