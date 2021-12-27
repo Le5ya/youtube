@@ -1,7 +1,25 @@
-const swiper = new Swiper('.channel-slider', {
+const mySwiper = new Swiper('.channel-slider', {
   // Optional parameters
   loop: true,
-  slidesPerView: 6,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    1900: {
+      slidesPerView: 6
+    },
+    1600: {
+      slidesPerView: 5
+    },
+    1300: {
+      slidesPerView: 4
+    },
+    1100: {
+      slidesPerView: 3
+    }, 
+    800: {
+      slidesPerView: 2
+    }
+  },
   // Navigation arrows
   navigation: {
     nextEl: '.channel-button-next',
@@ -9,10 +27,20 @@ const swiper = new Swiper('.channel-slider', {
   },
 
 });
-const swiper_ = new Swiper('.channel-slider_', {
+const mySwiper_ = new Swiper('.channel-slider_', {
   // Optional parameters
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
+  spaceBetween: 20,
+    breakpoints: {
+    1600: {
+      slidesPerView: 3
+    },
+    1100: {
+      slidesPerView: 2
+    } 
+   
+  },
   // Navigation arrows
   navigation: {
     nextEl: '.channel-button-next_',
@@ -20,10 +48,28 @@ const swiper_ = new Swiper('.channel-slider_', {
   },
 
 });
-const swiper__ = new Swiper('.channel-slider__', {
+const mySwiper__ = new Swiper('.channel-slider__', {
   // Optional parameters
   loop: true,
-  slidesPerView: 6,
+  slidesPerView: 1,
+  spaceBetween: 20,
+    breakpoints: {
+    1900: {
+      slidesPerView: 6
+    },
+    1600: {
+      slidesPerView: 5
+    },
+    1300: {
+      slidesPerView: 4
+    },
+    1100: {
+      slidesPerView: 3
+    }, 
+    800: {
+      slidesPerView: 2
+    }
+  },
   // Navigation arrows
   navigation: {
     nextEl: '.channel-button-next__',
@@ -31,3 +77,13 @@ const swiper__ = new Swiper('.channel-slider__', {
   },
 
 });
+const searchBtn = document.querySelector('.mobile-search');
+const mobileSearch = document.querySelector('.input-group');
+searchBtn.addEventListener('clock', ()=> {
+  mobileSearch.classList.toggle('is-open');
+});
+if(document.documentElement.scrollWidth <= 640) {
+  mySwiper.destroy();
+  mySwiper_.destroy();
+  mySwiper__.destroy();
+}
