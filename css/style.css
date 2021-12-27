@@ -294,10 +294,14 @@ body {
     display: flex;
     flex-direction: column;
   }
-  swiper-slide {
+  .swiper-slide {
     margin-bottom: 40px;
   }
   .video-thumb {
+    border: 1px solid #000;
+    height: 300px;
+  }
+  .thumbnail {
     height: 300px;
   }
   .slider-buttons {

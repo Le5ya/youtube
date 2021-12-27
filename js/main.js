@@ -1,4 +1,4 @@
-const mySwiper = new Swiper('.channel-slider', {
+const swiper = new Swiper('.channel-slider', {
   // Optional parameters
   loop: true,
   slidesPerView: 1,
@@ -27,7 +27,7 @@ const mySwiper = new Swiper('.channel-slider', {
   },
 
 });
-const mySwiper_ = new Swiper('.channel-slider_', {
+const swiper_ = new Swiper('.channel-slider_', {
   // Optional parameters
   loop: true,
   slidesPerView: 1,
@@ -48,7 +48,7 @@ const mySwiper_ = new Swiper('.channel-slider_', {
   },
 
 });
-const mySwiper__ = new Swiper('.channel-slider__', {
+const swiper__ = new Swiper('.channel-slider__', {
   // Optional parameters
   loop: true,
   slidesPerView: 1,
@@ -83,7 +83,7 @@ searchBtn.addEventListener('clock', ()=> {
   mobileSearch.classList.toggle('is-open');
 });
 if(document.documentElement.scrollWidth <= 640) {
-  mySwiper.destroy();
-  mySwiper_.destroy();
-  mySwiper__.destroy();
+  swiper.destroy();
+  swiper_.destroy();
+  swiper__.destroy();
 }
