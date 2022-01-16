@@ -79,7 +79,7 @@ const swiper__ = new Swiper('.channel-slider__', {
 });
 const searchBtn = document.querySelector('.mobile-search');
 const mobileSearch = document.querySelector('.input-group');
-searchBtn.addEventListener('clock', ()=> {
+searchBtn.addEventListener('click', ()=> {
   mobileSearch.classList.toggle('is-open');
 });
 if(document.documentElement.scrollWidth <= 640) {
